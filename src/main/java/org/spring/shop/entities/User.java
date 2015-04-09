@@ -1,6 +1,7 @@
 package org.spring.shop.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,7 +31,7 @@ public class User implements Serializable {
 	private String email;
 	@OneToMany
 	@JoinColumn(name="role")
-	private Role role;
+	private Collection<Role> role;
 	public Long getId() {
 		return id;
 	}
@@ -55,17 +56,18 @@ public class User implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Role getRole() {
+	public Collection<Role> getRole() {
 		return role;
 	}
-	public void setRole(Role role) {
+	public void setRole(Collection<Role> role) {
 		this.role = role;
 	}
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(String name, String password, String email, Role role) {
+	public User(String name, String password, String email,
+			Collection<Role> role) {
 		super();
 		this.name = name;
 		this.password = password;
