@@ -2,8 +2,23 @@ package org.spring.shop.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+@Entity
+@Table(name="Brands")
 public class Brand implements Serializable {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotEmpty
+	@Size(min=1,max=255)
 	private String name;
 	public Long getId() {
 		return id;

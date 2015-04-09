@@ -2,13 +2,38 @@ package org.spring.shop.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+@Entity
+@Table(name="Products")
 public class Product implements Serializable {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotEmpty
+	@Size(min=1,max=255)
 	private String name;
+	@NotEmpty
+	@Size(min=1)
 	private String description;
+	@NotEmpty
 	private double price;
+	@NotEmpty
 	private int quantity;
+	@ManyToOne
+	@JoinColumn(name="category")
 	private Category category;
+	@ManyToOne
+	@JoinColumn(name="brand")
 	private Brand brand;
 	public Long getId() {
 		return id;

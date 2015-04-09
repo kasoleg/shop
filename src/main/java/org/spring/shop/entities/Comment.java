@@ -2,11 +2,33 @@ package org.spring.shop.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+@Entity
+@Table(name="Comments")
 public class Comment implements Serializable {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotEmpty
+	@Size(min=1)
 	private String text;
+	@ManyToOne
+	@JoinColumn(name="user")
 	private User user;
+	@NotEmpty
 	private Integer mark;
+	@ManyToOne
+	@JoinColumn(name="product")
 	private Product product;
 	public Long getId() {
 		return id;
