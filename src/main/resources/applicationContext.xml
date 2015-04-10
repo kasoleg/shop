@@ -33,4 +33,9 @@
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	<context:annotation-config></context:annotation-config>
+	
+	<bean id="dao" class="org.spring.shop.dao.ShopDaoImpl"/>
+	<bean id="admin" class="org.spring.shop.models.AdminShopImpl">
+		<property name="dao" ref="dao"></property>
+	</bean>
 </beans>

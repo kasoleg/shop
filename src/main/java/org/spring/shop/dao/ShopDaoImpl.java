@@ -14,8 +14,24 @@ public class ShopDaoImpl implements IShopDAO {
 	
 	@Override
 	public List<Category> listCategories() {
-		Query query = em.createQuery("select c from Categories c");
+		Query query = em.createQuery("select c from Category c");
 		return query.getResultList();
+	}
+
+	@Override
+	public void addCategory(Category category) {
+		em.persist(category);
+	}
+
+	@Override
+	public void deleteCategory(Long id) {
+		Category category = em.find(Category.class, id);
+		em.remove(category);
+	}
+
+	@Override
+	public void modifyCategory(Category category) {
+		em.merge(category);
 	}
 
 }
