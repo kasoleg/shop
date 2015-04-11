@@ -23,31 +23,33 @@ public class AdminCategoriesController {
 	}
 	
 	@RequestMapping(value="/saveCategory")
-	public String saveCategory(@Valid Category category, BindingResult result, Model model) {
+	public String save(@Valid Category category, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			model.addAttribute("categories", admin.listCategories());
 			return "categories";
 		}
-		admin.addCategory(category);
+		if (category.getId() != null)
+			admin.modifyCategory(category);
+		else
+			admin.addCategory(category);
 		model.addAttribute("category", new Category());
 		model.addAttribute("categories", admin.listCategories());
 		return "categories";
-		
 	}
 	
 	@RequestMapping(value="/deleteCategory")
-	public String deleteCategory(Long id, Model model) {
+	public String delete(Long id, Model model) {
 		admin.deleteCategory(id);
 		model.addAttribute("category", new Category());
 		model.addAttribute("categories", admin.listCategories());
 		return "categories";
 	}
 	
-	/*@RequestMapping(value="/editCategory")
-	public String editCategory(Long id, Model model) {
-		admin.modifyCategory(category);
-		model.addAttribute("category", new Category());
+	@RequestMapping(value="/editCategory")
+	public String edit(Long id, Model model) {
+		Category category = admin.getCategory(id);
+		model.addAttribute("category", category);
 		model.addAttribute("categories", admin.listCategories());
 		return "categories";
-	}*/
+	}
 }

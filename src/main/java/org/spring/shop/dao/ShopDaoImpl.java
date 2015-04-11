@@ -35,4 +35,9 @@ public class ShopDaoImpl implements IShopDAO {
 		em.merge(category);
 	}
 
+	@Override
+	public Category getCategory(Long id) {
+		return em.find(Category.class, id);
+	}
+
 }

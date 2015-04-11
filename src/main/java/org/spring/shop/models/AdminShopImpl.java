@@ -33,5 +33,10 @@ public class AdminShopImpl implements IAdminCategories {
 	public List<Category> listCategories() {
 		return dao.listCategories();
 	}
+
+	@Override
+	public Category getCategory(Long id) {
+		return dao.getCategory(id);
+	}
 	
 }

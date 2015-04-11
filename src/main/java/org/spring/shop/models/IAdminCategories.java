@@ -9,4 +9,5 @@ public interface IAdminCategories {
 	public void addCategory(Category category);
 	public void deleteCategory(Long id);
 	public void modifyCategory(Category category);
+	public Category getCategory(Long id);
 }
