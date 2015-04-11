@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -20,8 +21,7 @@ public class Category implements Serializable {
 	@NotEmpty
 	@Size(min=1,max=255)
 	private String name;
-	@NotEmpty
-	private Long rating;
+	private Integer rating = 0;
 	public Long getId() {
 		return id;
 	}
@@ -34,17 +34,17 @@ public class Category implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Long getRating() {
+	public Integer getRating() {
 		return rating;
 	}
-	public void setRating(Long rating) {
+	public void setRating(Integer rating) {
 		this.rating = rating;
 	}
 	public Category() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Category(String name, Long rating) {
+	public Category(String name, Integer rating) {
 		super();
 		this.name = name;
 		this.rating = rating;
