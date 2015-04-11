@@ -34,4 +34,20 @@ public class AdminCategoriesController {
 		return "categories";
 		
 	}
+	
+	@RequestMapping(value="/deleteCategory")
+	public String deleteCategory(Long id, Model model) {
+		admin.deleteCategory(id);
+		model.addAttribute("category", new Category());
+		model.addAttribute("categories", admin.listCategories());
+		return "categories";
+	}
+	
+	/*@RequestMapping(value="/editCategory")
+	public String editCategory(Long id, Model model) {
+		admin.modifyCategory(category);
+		model.addAttribute("category", new Category());
+		model.addAttribute("categories", admin.listCategories());
+		return "categories";
+	}*/
 }

@@ -6,10 +6,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/admin.css" />
 <title>Categories</title>
 </head>
 <body>
-<div id="formCategory">
+<div id="formCategory" class="ceil">
 	<f:form modelAttribute="category" action="saveCategory" method="post">
 		<table>
 			<tr>
@@ -23,16 +24,18 @@
 		</table>
 	</f:form>	
 </div>
-<div>
-	<table>
+<div class="ceil">
+	<table class="tabStyle1">
 		<tr>
-			<th>ID</th><th>NAME</th><th>RATING</th>
+			<th>ID</th><th>NAME</th><th>RATING</th><th></th><th></th>
 		</tr>
 		<c:forEach items="${categories}" var="category">
 			<tr>
 				<td>${category.id}</td>
 				<td>${category.name}</td>
 				<td>${category.rating}</td>
+				<td><a href="deleteCategory?id=${ category.id }">Delete</a></td>
+				<td><a href="editCategory?id=${ category.id }">Edit</a></td>
 			</tr>
 		</c:forEach>
 	</table>
