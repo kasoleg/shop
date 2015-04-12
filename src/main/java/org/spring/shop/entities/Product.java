@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -25,10 +26,9 @@ public class Product implements Serializable {
 	@NotEmpty
 	@Size(min=1)
 	private String description;
-	@NotEmpty
 	private double price;
-	@NotEmpty
-	private int quantity;
+	@NotNull
+	private Integer quantity;
 	@ManyToOne
 	@JoinColumn(name="category")
 	private Category category;
@@ -59,10 +59,10 @@ public class Product implements Serializable {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 	public Category getCategory() {
@@ -81,7 +81,7 @@ public class Product implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Product(String name, String description, double price, int quantity) {
+	public Product(String name, String description, double price, Integer quantity) {
 		super();
 		this.name = name;
 		this.description = description;

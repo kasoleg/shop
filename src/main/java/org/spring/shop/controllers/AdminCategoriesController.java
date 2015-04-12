@@ -3,7 +3,7 @@ package org.spring.shop.controllers;
 import javax.validation.Valid;
 
 import org.spring.shop.entities.Category;
-import org.spring.shop.models.IAdminCategories;
+import org.spring.shop.models.IAdmin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value="/admin/categories")
 public class AdminCategoriesController {
 	@Autowired
-	private IAdminCategories admin;
+	private IAdmin admin;
 	@RequestMapping(value="/index")
 	public String index(Model model) {
 		model.addAttribute("category", new Category());

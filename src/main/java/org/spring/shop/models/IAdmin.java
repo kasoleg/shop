@@ -1,10 +1,12 @@
-package org.spring.shop.dao;
+package org.spring.shop.models;
 
 import java.util.List;
 
-import org.spring.shop.entities.*;
+import org.spring.shop.entities.Brand;
+import org.spring.shop.entities.Category;
+import org.spring.shop.entities.Product;
 
-public interface IShopDAO {
+public interface IAdmin {
 	public List<Category> listCategories();
 	public void addCategory(Category category);
 	public void deleteCategory(Long id);

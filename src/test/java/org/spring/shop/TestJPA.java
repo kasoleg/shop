@@ -21,5 +21,4 @@ public class TestJPA {
 			assertTrue(e.getMessage(), false);
 		}
 	}
-
 }
