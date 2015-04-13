@@ -30,8 +30,9 @@ public class User implements Serializable {
 	@Size(max=100)
 	private String email;
 	@OneToMany
-	@JoinColumn(name="role")
-	private Collection<Role> role;
+	@JoinColumn(name="user")
+	private Collection<Role> roles;
+	private Boolean actived;
 	public Long getId() {
 		return id;
 	}
@@ -56,22 +57,28 @@ public class User implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Collection<Role> getRole() {
-		return role;
+	public Collection<Role> getRoles() {
+		return roles;
 	}
-	public void setRole(Collection<Role> role) {
-		this.role = role;
+	public void setRole(Collection<Role> roles) {
+		this.roles = roles;
+	}
+	public Boolean getActived() {
+		return actived;
+	}
+	public void setActived(Boolean actived) {
+		this.actived = actived;
 	}
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public User(String name, String password, String email,
-			Collection<Role> role) {
+			Collection<Role> roles) {
 		super();
 		this.name = name;
 		this.password = password;
 		this.email = email;
-		this.role = role;
+		this.roles = roles;
 	}
 }
