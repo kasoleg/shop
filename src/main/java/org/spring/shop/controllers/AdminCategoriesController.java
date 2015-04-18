@@ -19,14 +19,14 @@ public class AdminCategoriesController {
 	public String index(Model model) {
 		model.addAttribute("category", new Category());
 		model.addAttribute("categories", admin.listCategories());
-		return "categories";
+		return "CategoriesView";
 	}
 	
 	@RequestMapping(value="/saveCategory")
 	public String save(@Valid Category category, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			model.addAttribute("categories", admin.listCategories());
-			return "categories";
+			return "CategoriesView";
 		}
 		if (category.getId() != null)
 			admin.modifyCategory(category);
@@ -34,7 +34,7 @@ public class AdminCategoriesController {
 			admin.addCategory(category);
 		model.addAttribute("category", new Category());
 		model.addAttribute("categories", admin.listCategories());
-		return "categories";
+		return "CategoriesView";
 	}
 	
 	@RequestMapping(value="/deleteCategory")
@@ -50,6 +50,6 @@ public class AdminCategoriesController {
 		Category category = admin.getCategory(id);
 		model.addAttribute("category", category);
 		model.addAttribute("categories", admin.listCategories());
-		return "categories";
+		return "CategoriesView";
 	}
 }

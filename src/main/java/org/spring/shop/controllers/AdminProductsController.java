@@ -21,7 +21,7 @@ public class AdminProductsController {
 		model.addAttribute("products", admin.listProducts());
 		model.addAttribute("categories", admin.listCategories());
 		model.addAttribute("brands", admin.listBrands());
-		return "products";
+		return "ProductsView";
 	}
 	
 	@RequestMapping(value="/saveProduct")
@@ -30,7 +30,7 @@ public class AdminProductsController {
 			model.addAttribute("categories", admin.listProducts());
 			model.addAttribute("categories", admin.listCategories());
 			model.addAttribute("brands", admin.listBrands());
-			return "products";
+			return "ProductsView";
 		}
 		if (product.getId() != null)
 			admin.modifyProduct(product);
@@ -40,7 +40,7 @@ public class AdminProductsController {
 		model.addAttribute("products", admin.listProducts());
 		model.addAttribute("categories", admin.listCategories());
 		model.addAttribute("brands", admin.listBrands());
-		return "products";
+		return "ProductsView";
 	}
 	
 	@RequestMapping(value="/deleteProduct")
@@ -50,7 +50,7 @@ public class AdminProductsController {
 		model.addAttribute("products", admin.listProducts());
 		model.addAttribute("categories", admin.listCategories());
 		model.addAttribute("brands", admin.listBrands());
-		return "products";
+		return "ProductsView";
 	}
 	
 	@RequestMapping(value="/editProduct")
@@ -60,6 +60,6 @@ public class AdminProductsController {
 		model.addAttribute("products", admin.listProducts());
 		model.addAttribute("categories", admin.listCategories());
 		model.addAttribute("brands", admin.listBrands());
-		return "products";
+		return "ProductsView";
 	}
 }
