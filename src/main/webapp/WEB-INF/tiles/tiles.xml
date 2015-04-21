@@ -3,34 +3,19 @@
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-	<definition name="layout1" template="/WEB-INF/templates/layout1.jsp">
+	<definition name="common" template="/WEB-INF/templates/common.jsp">
 		<put-attribute name="title" value=""></put-attribute>
-		<put-attribute name="header" value="/WEB-INF/templates/layout1/header.jsp"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/templates/layout1/menu.jsp"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/templates/common/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/templates/common/menu.jsp"></put-attribute>
 		<put-attribute name="body" value=""></put-attribute>
-		<put-attribute name="footer" value="/WEB-INF/templates/layout1/footer.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/templates/common/footer.jsp"></put-attribute>
 	</definition>
-	<definition name="layout2" template="/WEB-INF/templates/layout2.jsp">
-		<put-attribute name="title" value=""></put-attribute>
-		<put-attribute name="header" value="/WEB-INF/templates/layout2/header.jsp"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/templates/layout2/menu.jsp"></put-attribute>
-		<put-attribute name="body" value=""></put-attribute>
-		<put-attribute name="footer" value="/WEB-INF/templates/layout2/footer.jsp"></put-attribute>
-	</definition>
-	<definition name="ProductsView" extends="layout1">
-		<put-attribute name="title" value="Products"></put-attribute>
-		<put-attribute name="body" value="/WEB-INF/views/ProductsView.jsp"></put-attribute>
-	</definition>
-	<definition name="CategoriesView" extends="layout1">
-		<put-attribute name="title" value="Categories"></put-attribute>
-		<put-attribute name="body" value="/WEB-INF/views/CategoriesView.jsp"></put-attribute>
-	</definition>
-	<definition name="login" extends="layout1">
-		<put-attribute name="title" value="Login"></put-attribute>
-		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
-	</definition>
-	<definition name="home" extends="layout2">
+	<definition name="home" extends="common">
 		<put-attribute name="title" value="Shop"></put-attribute>
 		<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition>
+	<definition name="loginregister" extends="common">
+		<put-attribute name="title" value="Login/Register"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
 	</definition>
 </tiles-definitions>

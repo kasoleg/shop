@@ -1,4 +1,44 @@
-@CHARSET "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'),local('Roboto-Light'),url(//themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'),local('Roboto-Regular'),url(//themes.googleusercontent.com/static/fonts/roboto/v10/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'),local('Roboto-Medium'),url(//themes.googleusercontent.com/static/fonts/roboto/v10/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'),local('Roboto-Bold'),url(//themes.googleusercontent.com/static/fonts/roboto/v10/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Light'),local('RobotoCondensed-Light'),url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nNeiznanRB67rGZDYkMvKPc.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed Regular'),local('RobotoCondensed-Regular'),url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format('woff')}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Condensed Bold'),local('RobotoCondensed-Bold'),url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff) format('woff')}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('/assets/fonts/glyphicons-halflings-regular.eot?v=1');
+    src: url('/assets/fonts/glyphicons-halflings-regular.eot?#iefix?v=1') format('embedded-opentype'),url('/assets/fonts/glyphicons-halflings-regular.woff?v=1') format('woff'),url('/assets/fonts/glyphicons-halflings-regular.ttf?v=1') format('truetype'),url('/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular?v=1') format('svg')}
+
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%; /*Adjusts the text size on a webpage on IE for Windows Phone*/
@@ -34,6 +74,24 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 header {
@@ -267,6 +325,10 @@ nav {
     height: 44px;
     background: #f5f5f5;
 	padding: 1px;
+	text-align: left;
+  	z-index: 10;
+  	padding: 0;
+  	margin-bottom: 10px;
 }
 
 nav #shop-navigation {
@@ -279,7 +341,35 @@ nav #shop-navigation ul {
     width: 100%;
 }
 
-nav #shop-navigation .mainli {
+
+
+
+
+
+
+
+nav #shop-navigation .non-active {
+    box-shadow: none;
+    border-radius: 3px;
+    width: 190px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 5px;
+    line-height: 32px;
+    padding-left: 50px;
+    background: url(../img/header/bar_white.png) no-repeat 8% 50%;
+    background-color: #666;
+}
+nav #shop-navigation .non-active a {
+    color: #fff;
+    line-height: 35px;
+}
+
+#shop-navigation:hover .mainMenu {
+	display: block;
+}
+
+nav #shop-navigation:hover .mainli {
     background: url(../img/header/list.png) no-repeat 8% 50%;
     width: 210px;
     height: 44px;
@@ -290,11 +380,18 @@ nav #shop-navigation .mainli {
     -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
     box-shadow: 0 4px 5px rgba(0,0,0,0.1);
 }
-nav #shop-navigation .mainli a {
+nav #shop-navigation:hover .mainli a {
     color: #4a4a4a;
     font-weight: 700;
     line-height: 44px;
     display: block;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .menu ul, .menu-links ul, .menuLink {
@@ -744,7 +841,7 @@ nav .menu-links .top-links ul.shop-nav li a:hover {
 	z-index: 6;
 }
 
-/* Ð°Ð²Ñ‚Ð¾Ñ€Ð¾Ñ‚Ð°Ñ†Ð¸Ñ ÑÐ»Ð°Ð¹Ð´Ð¾Ð² */
+/* àâòîðîòàöèÿ ñëàéäîâ */
 @keyframes item-autoplay_count_2 {0%{opacity:0;}20%{opacity:1;}50%{opacity:1;}70%{opacity:0;}100%{opacity:0;}}
 @keyframes item-autoplay_count_3 {0%{opacity:0;}10%{opacity:1;}33% {opacity:1;}43% {opacity:0;}100%{opacity:0;}}
 @keyframes item-autoplay_count_4 {0%{opacity:0;}8% {opacity:1;}25% {opacity:1;}33% {opacity:0;}100%{opacity:0;}}
@@ -1007,4 +1104,244 @@ footer #shopcopyright {
     font: normal 12px 'PT Sans',arial,sans-serif;
     text-decoration: none;
     color: #6c6c6c;
-    line-height: 18px}
+    line-height: 18px;
+}
+
+/*login*/
+#loginPage {
+    background: #fff;
+    padding-bottom: 250px;
+}
+
+#loginPage: : -webkit-input-placeholder {
+    color: #adadad;
+}
+#loginPage: : -webkit-input-placeholder: -moz-placeholder {
+    color: #adadad;
+}
+#loginPage: : -webkit-input-placeholder: : -moz-placeholder {
+    color: #adadad;
+}
+#loginPage: : -webkit-input-placeholder: -ms-input-placeholder {
+    color: #adadad;
+}
+
+#loginPage .container {
+	margin: 0 auto;
+	width: 1170px;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: table;
+}
+
+#loginPage .container #login, #loginPage .container #registration {
+	width: 50%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#loginPage .main-container {
+	margin-top: 20px;
+}
+
+#loginPage .main-container .navbar-form {
+	width: auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-right: 0;
+	margin-left: 0;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 10px 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
+box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
+}
+
+#loginPage .navbar-form h2 {
+	color: #707070;
+	font-weight: 700;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.column {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 83%;
+}
+
+#loginPage .navbar-form .loginText {
+	margin-top: 4px;
+	color: #A2A29B;
+	font-weight: 400;
+}
+
+#loginPage .navbar-form .control {
+	margin-top: 25px;
+}
+
+#loginPage .navbar-form input, #loginPage .navbar-form button{
+	width: 100%;
+	box-shadow: 0 2px 0 #d7d7d7;
+	-webkit-box-shadow: 0 2px 0 #d7d7d7;
+	-moz-box-shadow: 0 2px 0 #d7d7d7;
+	border-radius: 0;
+	height: 46px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#loginPage .navbar-form .navbar-link {
+	float: right;
+}
+
+#loginPage .navbar-form #forgot-password-link {
+	margin-top: 5px;
+	height: 20px;
+}
+
+#loginPage .navbar-form .btn-login {
+	background-color: #f27120;
+	box-shadow: 0 2px 0 #CF7D4A;
+	-webkit-box-shadow: 0 2px 0 #CF7D4A;
+	-moz-box-shadow: 0 2px 0 #CF7D4A;
+	font-family: 'Roboto Condensed';
+	font-size: 1.5em;
+	font-weight: bold;
+	border-bottom-color: #e36012;
+	border-bottom-width: 2px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: bold;
+  	height: 46px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+#socialLogin {
+	  margin-top: 30px;
+}
+
+#socialLogin .socialText {
+	color: #A8A0A0;
+	font-weight: 400;
+	font-size: .875em;
+	margin-top: 15px;
+	width: 26%;
+	float: left;
+}
+
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+.list-inline>li {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#btn-social-login {
+	width: 100%;
+}
+
+#socialLogin .note {
+	font-size: .875em;
+	margin-top: 10px;
+}
+
+#loginPage .navbar-form h2 {
+	color: #707070;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+#loginPage #registration-box h2 span {
+	color: #F37020;
+}
+
+#loginPage #registration-box .registrationText {
+	margin-top: 4px;
+	color: #A2A29B;
+	font-weight: 400;
+}
+
+#loginPage #registration #registration-box #registration-form button[type=submit] {
+	margin-top: 28px;
+}
+
+#loginPage #registration-box #register-button-link .btn-register {
+	background-color: #306fd8;
+	box-shadow: 0 2px 0 #41639B;
+	-webkit-box-shadow: 0 2px 0 #41639B;
+	-moz-box-shadow: 0 2px 0 #41639B;
+	margin-top: 17px;
+	font-family: 'Roboto Condensed';
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#loginPage .navbar-form button {
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#loginPage #registration #registration-box #registration-form {
+	display: none
+}
+
+#loginPage #registration-box .arrow-curved {
+	height: 45px;
+	margin-top: 15px;
+}
+
+#header-registration h2, #header-registration .registrationText {
+	width: 85%;
+	float: left;
+}

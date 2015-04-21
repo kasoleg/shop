@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<header>
+
 	<div class="header-top">
 		<div class="top-links">
 			<ul>
@@ -23,7 +23,7 @@
 	<div class="header">
 		<div class="shop-logo">
 			<a href="#" title="Shop.com">
-				<img src="<%=request.getContextPath()%>/resources/layout2/img/header/logo.png" alt="Shop.com - Online Shopping Russia" />
+				<img src="<%=request.getContextPath()%>/resources/common/img/header/logo.png" alt="Shop.com - Online Shopping Russia" />
 			</a>
 		</div>
 		<div class="search">
@@ -43,16 +43,15 @@
 				</div>
 			</form>
 		</div>
-	</div>
-	<div class="acc-cart">
+		<div class="acc-cart">
 		<div class="login-acc">
 			<div id="shopLogin">
-				<a id="loginlink" href="#" title="Login">LOGIN / REGISTER</a>
+				<a id="loginlink" href="loginregister" title="Login">LOGIN / REGISTER</a>
 			</div>
 			<div id="account">
 				<a href="#">
 					MY ACCOUNT
-					<img src="<%=request.getContextPath()%>/resources/layout2/img/header/arrow_down.png" />
+					<img src="<%=request.getContextPath()%>/resources/common/img/header/arrow_down.png" />
 				</a>
 				<ul class="shop-dropdown-menu" role="menu" aria-labelledby="dLabel" style="display: none;">
 					<li>
@@ -72,5 +71,6 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	
-</header>
+	
