@@ -46,7 +46,7 @@
 		<div class="acc-cart">
 		<div class="login-acc">
 			<div id="shopLogin">
-				<a id="loginlink" href="loginregister" title="Login">LOGIN / REGISTER</a>
+				<a id="loginlink" href="login" title="Login">LOGIN / REGISTER</a>
 			</div>
 			<div id="account">
 				<a href="#">

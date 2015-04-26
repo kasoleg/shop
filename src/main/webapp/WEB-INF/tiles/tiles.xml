@@ -14,7 +14,7 @@
 		<put-attribute name="title" value="Shop"></put-attribute>
 		<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
 	</definition>
-	<definition name="loginregister" extends="common">
+	<definition name="login" extends="common">
 		<put-attribute name="title" value="Login/Register"></put-attribute>
 		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
 	</definition>

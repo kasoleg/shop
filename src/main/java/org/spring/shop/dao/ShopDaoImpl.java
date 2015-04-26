@@ -73,4 +73,8 @@ public class ShopDaoImpl implements IShopDAO {
 		return query.getResultList();
 	}
 
+	@Override
+	public void addUser(User user) {
+		em.persist(user);
+	}
 }

@@ -18,4 +18,6 @@ public interface IShopDAO {
 	public Product getProduct(Long id);
 	
 	public List<Brand> listBrands();
+	
+	public void addUser(User user);
 }
