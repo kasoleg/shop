@@ -3,6 +3,7 @@ package org.spring.shop.entities;
 import java.io.Serializable;
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,7 +30,7 @@ public class User implements Serializable {
 	@NotEmpty
 	@Size(max=100)
 	private String email;
-	@OneToMany
+	@OneToMany(cascade= CascadeType.ALL)
 	@JoinColumn(name="user")
 	private Collection<Role> roles;
 	private Boolean actived;
@@ -60,7 +61,7 @@ public class User implements Serializable {
 	public Collection<Role> getRoles() {
 		return roles;
 	}
-	public void setRole(Collection<Role> roles) {
+	public void setRoles(Collection<Role> roles) {
 		this.roles = roles;
 	}
 	public Boolean getActived() {

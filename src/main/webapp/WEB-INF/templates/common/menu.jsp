@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <div id="shop-navigation">
 	<div class="mainli non-active">
 		<a href="#">ALL STORES</a>
 	</div>
-	<div class="mainMenu animated" id="menucontents">
+	<div class="mainMenu animated slideInLeft" id="menucontents">
 		<ul class="menu">
 			<li class="menuLink">
 				<div class="store">

@@ -20,4 +20,5 @@ public interface IShopDAO {
 	public List<Brand> listBrands();
 	
 	public void addUser(User user);
+	public User getUserByEmail(String email);
 }

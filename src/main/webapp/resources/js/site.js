@@ -130,3 +130,19 @@ $(document).ready(function() {
 		}
 	}
 });
+
+$(document).ready(function() {
+	var shopDropdownMenu = $("#shop-dropdown-menu");
+	var account = $("#account");
+	
+	account.mouseenter(function() {
+		if (!shopDropdownMenu.is(":visible")) {
+            shopDropdownMenu.slideDown(200);
+        }
+	});
+	
+	account.mouseleave(function() {
+		shopDropdownMenu.slideUp(200);
+	});
+});
+

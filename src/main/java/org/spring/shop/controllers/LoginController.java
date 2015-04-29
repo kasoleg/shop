@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.spring.shop.entities.Product;
@@ -13,6 +15,8 @@ import org.spring.shop.models.IAdmin;
 import org.spring.shop.models.IUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,13 +29,14 @@ public class LoginController {
 	@Autowired
 	private IUser user;
 	@RequestMapping(value="/login")
-	public ModelAndView login(@RequestParam(value="error", required = false) String error) {
+	public ModelAndView login(HttpServletResponse response, @RequestParam(value="error", required = false) String error) {
 		ModelAndView model = new ModelAndView();
 		if (error != null) {
 			model.addObject("error", "Invalid email or password. Please try again.");
 		}
 	    model.addObject("user", new User());
 		model.setViewName("login");
+		
 		return model;
 	}
 	
@@ -41,13 +46,15 @@ public class LoginController {
 			model.addAttribute("categories", user);
 			return "login";
 		}
-		Md5PasswordEncoder encoderMD5 = new Md5PasswordEncoder();
-		user.setPassword(encoderMD5.encodePassword(user.getPassword(), null));
-		/*Role role = new Role("ROLE_USER");
-		List<Role> roles = new ArrayList<Role>();
-		roles.add(role);
-		user.setRole(roles);*/
 		this.user.addUser(user);
+		return "home";
+	}
+	
+	@RequestMapping(value="/logout")
+	public String logout(HttpServletResponse response) {
+		Cookie cookie = new Cookie("cust_name", null);
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
 		return "home";
 	}
 }

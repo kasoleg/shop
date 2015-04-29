@@ -53,7 +53,11 @@
 				authentication-failure-url="/login?error=true"
 				username-parameter="email"
 				password-parameter="password"/>
-		<s:logout logout-success-url="/logout" delete-cookies="JSESSIONID" invalidate-session="true"/>
+		<s:logout 
+			logout-url="/logout"
+			logout-success-url="/"/>
+		<s:remember-me />
+		<s:csrf disabled="true"/>
 	</s:http>
 	<s:authentication-manager>
 		<s:authentication-provider>
