@@ -386,7 +386,7 @@
 											<div class="title">
 												<a href="#" title="Micromax Canvas Juice 2 AQ5001 (Silver)">Micromax Canvas Juice 2 AQ5001 (Silver)</a>
 											</div>
-											<div class="price container">
+											<div class="price">
 												<span class="final-price">
 													<span class="c-inr">Rs.</span>
 													 8&nbsp;399

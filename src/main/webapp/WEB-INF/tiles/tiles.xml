@@ -26,4 +26,12 @@
 		<put-attribute name="title" value="Electronics - All Products"></put-attribute>
 		<put-attribute name="body" value="/WEB-INF/views/products.jsp"></put-attribute>
 	</definition>
+	<definition name="product" extends="common">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/product.jsp"></put-attribute>
+	</definition>
+	<definition name="cart" extends="common">
+		<put-attribute name="title" value="Shoopping Cart"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/cart.jsp"></put-attribute>
+	</definition>
 </tiles-definitions>
