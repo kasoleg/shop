@@ -71,94 +71,59 @@
 				<div id="container_sdp" class="row">
 					<div id="prod_img" class="top-margin">
 						<div id="ib_img_viewer">
-							<div id="product-images" class="animated fadeIn">
-								<span class="clearfix zoomable img-cont" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x400x400.jpg">
-									<img class="img-responsive" id="img-909808" _src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x320x320.jpg" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x400x400.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 400px; height: 400px; border: none; max-width: none; max-height: none;">
-								</span>
-								<span class="clearfix zoomable img-cont" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x50x456.jpg">
-									<img class="img-responsive" id="img-909810" _src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x320x320.jpg" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x50x456.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 50px; height: 456px; border: none; max-width: none; max-height: none;">
-								</span>
-								<span class="clearfix zoomable img-cont inview" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x300x570.jpg">
-									<img class="img-responsive inview" id="img-909814" _src="" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image" src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x320x320.jpg" style="visibility: visible;">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x300x570.jpg" class="zoomImg" style="position: absolute; top: -217.96875px; left: 22.9285714285714px; width: 300px; height: 570px; border: none; max-width: none; max-height: none; display: inline; opacity: 0;">
-								</span>
-								<span class="clearfix zoomable img-cont" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x215x533.jpg">
-									<img class="img-responsive" id="img-909811" _src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x320x320.jpg" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x215x533.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 215px; height: 533px; border: none; max-width: none; max-height: none;">	
-								</span>
-								<span class="clearfix zoomable img-cont" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x300x559.jpg">
-									<img class="img-responsive" id="img-909813" _src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x320x320.jpg" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x300x559.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 300px; height: 559px; border: none; max-width: none; max-height: none;">
-								</span>
-								<span class="clearfix zoomable img-cont" style="position: relative; overflow: hidden;">
-									<img class="hidden" src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x80x647.jpg">
-									<img class="img-responsive" id="img-909812" _src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x320x320.jpg" alt="Samsung Galaxy S6" height="320" width="320" itemprop="image">
-									<img src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x80x647.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 80px; height: 647px; border: none; max-width: none; max-height: none;">
-								</span>
-							</div>
-							<ul id="ib_img_thumb" class="animated fadeIn slick-initialized slick-slider">
-								<div class="slick-list draggable" tabindex="0" style="padding:0 50px">
-									<div class="slick-trace" style="opacity: 1; width: 1024px; transform: translate3d(-448px, 0px, 0px);">
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/c0/7f/samsungsmg920izka400x400.jpg.96c07ff8e8.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-active">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-active">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/0b/f0/samsungsmg920izka400x4006.jpg.160bf09026.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-active">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x45x45.jpg" class="thumbs selectedThumb" style="opacity: 1;">
-										</li>
-										<li class="slick-slide">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/c0/7f/samsungsmg920izka400x400.jpg.96c07ff8e8.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x45x45.jpg" class="thumbs" style="opacity: 0.75;">
-										</li>
-										<li class="slick-slide slick-cloned">
-											<img src="http://catman-a2.infibeam.com/img/mobi/8841726/0b/f0/samsungsmg920izka400x4006.jpg.160bf09026.999x45x45.jpg" class="thumbs " style="opacity: 0.75;">
-										</li>
-									</div>
+							<div class="slick-slider animated fadeIn">
+								<div>
+									<img class="img-responsive" src="http://catman-a2.infibeam.com/img/mobi/8841726/c0/7f/samsungsmg920izka400x400.jpg.96c07ff8e8.999x320x320.jpg" alt="Samsung Galaxy S6" >
 								</div>
-								<button type="button" class="slick-prev"></button>
-								<button type="button" class="slick-next"></button>
-							</ul>
+								<div>
+									<img class="img-responsive"  src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x320x320.jpg" >
+								</div>
+								<div>
+									<img class="img-responsive"  src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x320x320.jpg" >
+								</div>
+								<div>
+									<img class="img-responsive" src="http://catman-a2.infibeam.com/img/mobi/8841726/0b/f0/samsungsmg920izka400x4006.jpg.160bf09026.999x320x320.jpg" alt="Samsung Galaxy S6" >
+								</div>
+								<div>
+									<img class="img-responsive"  src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x320x320.jpg" >
+								</div>
+								<div>
+									<img class="img-responsive"  src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x320x320.jpg" >
+								</div>
+								<div>
+									<img class="img-responsive" src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x320x320.jpg" alt="Samsung Galaxy S6" >
+								</div>
+								<div>
+									<img class="img-responsive"  src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x320x320.jpg" >
+								</div>
+							</div>
+							<div id="ib_img_thumb">
+									<div>
+										<img class="thumbs selectedThumb" src="http://catman-a2.infibeam.com/img/mobi/8841726/c0/7f/samsungsmg920izka400x400.jpg.96c07ff8e8.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/09/37/samsungsmg920izka400x4005.jpg.3a09373a05.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/41/1d/samsungsmg920izka400x4002.jpg.d1411dce6f.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/0b/f0/samsungsmg920izka400x4006.jpg.160bf09026.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/77/12/commonsmg920f001frontwhite.jpeg.057712a60b.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/e2/a0/commonsmg920f005lfront30white.jpeg.a7e2a0cff3.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/47/2f/commonsmg920f002backwhite.jpeg.9b472f6b7e.999x45x45.jpg">
+									</div>
+									<div>
+										<img class="thumbs" src="http://catman-a2.infibeam.com/img/mobi/8841726/5f/85/commonsmg920f003lsidewhite.jpeg.745f8587db.999x45x45.jpg">
+									</div>
+							</div>
+							
 						</div>
 					</div>
 					<div class="padding-left">
@@ -233,10 +198,10 @@
 										<div id="catalog-options" class="clearfix">
 											<div class="catalog-option-title">Color:</div>
 											<ul id="cat-option-ul" class="cat-options">
-												<li class="cat-option-color">
+												<li class="cat-option-color" onclick="activeColor(this)">
 													<span class="colorpicker" style="background-color:#000000"></span>
 												</li>
-												<li class="cat-option-color selected">
+												<li class="cat-option-color selected" onclick="activeColor(this)">
 													<span class="colorpicker selected" style="background-color:#ffffff"></span>
 												</li>
 											</ul>
@@ -314,11 +279,11 @@
 					<div class="left">
 						<div id="ib_products">
 							<ul id="ib_products_menu" class="nav nav-tabs">
-								<li class="tab_title active">
-									<a href="#">Description</a>
+								<li class="tab_title active" onclick="activeMenuItem(this, 1)">
+									<a>Description</a>
 								</li>
-								<li class="tab_title">
-									<a href="#">Specifications</a>
+								<li class="tab_title" onclick="activeMenuItem(this, 2)">
+									<a>Specifications</a>
 								</li>
 							</ul>
 							<div class="tab-content">
@@ -731,22 +696,353 @@
 							</div>
 						</div>
 					</div>
-					<!--div id="side-outer-warp">
-						<div class="column" id="similar_items_cont">
+					<div id="side-outer-warp" class="right">
+						<div id="similar_items_cont">
 							<div class="similar_items_side animated fadeIn">
 								<div class="similar-items">
 									<h2>Products You May be Interested In</h2>
-									<div id="similar-items-carousel" class="slick-initialised slick-slider">
-										<div class="slick-list draggable" tabindex="0">
-											<div class="slick-track">
-												<div class="group row slick-slide slick-cloned"></div>
+									<div id="similar-items-carousel">
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Samsung Galaxy Note 2 N7100 (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/fd/28/sizecomparisonrightlarge.png.8dfd28132c.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3c/fc/nokialumia925black.jpg.6c7f7f3cfc.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/ab/ae/gsmarena001.jpg.95abaeb79b.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
+											</div>
+											<div>
+												<a href="#">
+													<div class="align-center">
+														<img src="http://catman-a2.infibeam.com/img/mobi/8841726/3e/10/q600clubscreen.png.933e10047a.999x140x120.jpg" border="0" alt="Xolo Q600 Club (White)" title="Xolo Q600 Club (White)">
+													</div>
+													<div class="align-center title">Xolo Q600 Club (White)</div>
+													<div class="align-center price">
+														<span>
+															<span>R</span>
+															<span>5,620</span>
+														</span>
+														<span class="scratch">
+															<span>R</span>
+															<span class="price">6,499</span>
+														</span>
+													</div>
+												</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div-->
+					</div>
 				</div>
 			</div>
 		</div>

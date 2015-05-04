@@ -33,17 +33,25 @@
     font-style: normal;
     font-weight: 700;
     src: local('Roboto Condensed Bold'),local('RobotoCondensed-Bold'),url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff) format('woff')}
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('/assets/fonts/glyphicons-halflings-regular.eot?v=1');
-    src: url('/assets/fonts/glyphicons-halflings-regular.eot?#iefix?v=1') format('embedded-opentype'),url('/assets/fonts/glyphicons-halflings-regular.woff?v=1') format('woff'),url('/assets/fonts/glyphicons-halflings-regular.ttf?v=1') format('truetype'),url('/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular?v=1') format('svg')}
 
 @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('/assets/fonts/glyphicons-halflings-regular.eot?v=1');
-    src: url('/assets/fonts/glyphicons-halflings-regular.eot?#iefix?v=1') format('embedded-opentype'),url('/assets/fonts/glyphicons-halflings-regular.woff?v=1') format('woff'),url('/assets/fonts/glyphicons-halflings-regular.ttf?v=1') format('truetype'),url('/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular?v=1') format('svg')}
+  font-family: 'Glyphicons Halflings';
 
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
 
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+.slick-prev:before {
+    content: "\e079";
+}
+
+.slick-next:before {
+    content: "\e080";
+}
 
 html {
 	font-family: sans-serif;
@@ -1438,6 +1446,10 @@ small {
     background-color: #fff;
 }
 
+#search-container {
+	display: table;
+}
+
 #search .facetss {
 	padding: 0;
 	width: 25%;
@@ -1555,10 +1567,16 @@ small {
 	max-width: 1200px;
 }
 
-#search .facetss .facet-container h4.facet-title span.plus {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#search .facetss .facet-container h4.facet-title span.plus {
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
+}
+
+#search .facetss .facet-container h4.facet-title span.minus {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
 }
 
 #search .facetss .facet-container h4.facet-title span {
@@ -1607,10 +1625,6 @@ small {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.glyphicon-search:before {
-	content: "\e003";
 }
 
 #search .facetss .facet-container .contentHolder {
@@ -1790,6 +1804,10 @@ small {
 	text-transform: uppercase;
 }
 
+#search .search-summary .nav-tabs li:hover {
+    border-bottom: 3px #cc640d solid;
+}
+
 .nav-tabs>li {
 	float: left;
 	margin-bottom: -1px;
@@ -1944,8 +1962,6 @@ small {
 	padding: 10px;
 }
 
-
-
 /*product*/
 #submenu {
 	width: 100%;
@@ -2017,11 +2033,15 @@ small {
 #detail_page #prod_img {
 	float: left;
 	min-height: 320px;
+	width: 33%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #detail_page #ib_img_viewer {
 	top: 0;
 	left: 0;
+	width: 350px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -2162,8 +2182,22 @@ small {
 	left: 15px;
 }
 
+.slick-prev:before,.slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 #detail_page #ib_img_thumb .slick-prev, #detail_page #ib_img_thumb .slick-next {
 	top: 90%;
+}
+
+#detail_page #ib_img_thumb .slick-next {
+	right: 25px;
 }
 
 .slick-prev {
@@ -2187,8 +2221,29 @@ small {
 	outline: none;
 }
 
+#detail_page .slick-prev:before, #detail_page .slick-next:before {
+	color: #666;
+  	font-size: 16px;
+  	font-family: 'Glyphicons Halflings';
+}
+
+.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+	font-family: "slick";
+  	font-size: 20px;
+  	line-height: 1;
+  	color: white;
+  	opacity: .75;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
 #detail_page #container_sdp>.top-margin {
 	width: 380px;
+	position: relative;
 }
 
 #detail_page #container_sdp>.padding-left {
@@ -2509,6 +2564,7 @@ span.colorpicker {
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
+	float: left;
 }
 
 #detail_page #ib_products {
@@ -2560,6 +2616,10 @@ span.colorpicker {
 	  width: auto!important;
 }
 
+/*#detail_page #ib_products #productDetails .description {
+	margin-top: 15px;
+}*/
+
 #container_sdp {
 	display: table;
 }
@@ -2574,7 +2634,6 @@ span.colorpicker {
 }
 
 #detail_page #ib_products .catalog-desc {
-	margin-top: 15px;
 	line-height: 2;
 }
 
@@ -2605,6 +2664,20 @@ span.colorpicker {
     background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(255,255,255,0) 83%,white 95%,white 100%);
     background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(255,255,255,0) 83%,white 95%,white 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0)}
+}
+
+#detail_page #ib_products #productDetails.see-less .show-button .more {
+    display: inline-block;
+}
+#detail_page #ib_products #productDetails.see-less .show-button .less {
+    display: none;
+}
+#detail_page #ib_products #productDetails.see-less .show-button:hover {
+    background: #dfdfdf;
+}
+
+#detail_page #ib_products #productDetails .show-button:hover {
+    background: #dfdfdf;
 }
 
 #detail_page #ib_products #productDetails .show-button {
@@ -2639,25 +2712,6 @@ span.colorpicker {
 	left: 0;
 	width: 100%;
 	cursor: pointer;
-}
-
-#detail_page #ib_products #productDetails.see-less .show-button .more {
-    display: inline-block;
-}
-#detail_page #ib_products #productDetails.see-less .show-button .less {
-    display: none;
-}
-#detail_page #ib_products #productDetails.see-less .show-button:hover {
-    background: #dfdfdf;
-}
-
-#detail_page #ib_products #productDetails .show-button .more {
-    display: none}
-#detail_page #ib_products #productDetails .show-button .less {
-    display: inline-block}
-    
-span.more {
-	display: none;
 }
 
 #detail_page #ib_products .sales-package {
@@ -2846,7 +2900,103 @@ span.more {
 	color: #444;
 }
 
+#detail_page #ib_products li:hover a {
+	background-color: #ddd;
+}
 
+#detail_page .right {
+	width: 25%;
+	padding: 0 0 0 6px;
+	float: left;
+}
+
+#detail_page .right #similar_items_cont {
+	width: 100%;
+	float: left;
+}
+
+#detail_page .similar-items {
+	border-left: 1px dotted #DFDFDF;
+	text-align: center;
+  	padding: 15px 0;
+  	margin: 0 0 15px 0;
+}
+
+#detail_page .similar-items h2 {
+	font-size: 14px;
+  	margin-bottom: 20px;
+  	color: #444;
+  	text-transform: capitalize;
+  	text-align: left;
+  	padding: 0 0 15px 15px;
+  	border-bottom: 1px solid #d5d5d5;
+}
+
+#detail_page .similar-items .slick-prev {
+	left: 35%;
+}
+
+#detail_page .similar-items .slick-next {
+	right: 35%;
+}
+
+#detail_page .similar-items .slick-prev, #detail_page .similar-items .slick-next {
+	border-radius: 100%;
+  	top: 105%;
+}
+
+#detail_page .similar-items a {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 10px 0;
+	border: 1px solid transparent;
+}
+
+#detail_page .similar-items a .align-center {
+	text-align: center;
+}
+
+#detail_page .similar-items a img {
+	margin: 10px auto;
+}
+
+#detail_page .similar-items a .title {
+	color: #444;
+  	text-align: left;
+  	font-size: 13px;
+}
+
+#detail_page .similar-items a .price {
+	text-align: left;
+  	max-height: 40px;
+  	color: #d44950;
+}
+
+#detail_page .similar-items a .price .scratch {
+	font-weight: 300;
+}
+
+#detail_page .similar-items a .price .scratch .price {
+	color: #767676;
+}
+
+span.scratch {
+	text-decoration: line-through;
+  	color: #666;
+}
+
+#detail_page .similar-items a .price span {
+	width: 50%;
+}
+
+#detail_page .similar-items a .price>span {
+	display: block;
+	float: left;
+}
+
+#detail_page .similar-items a:hover {
+	border-color: #ddd;
+}
 
 /*cart*/
 #main-cart-page {

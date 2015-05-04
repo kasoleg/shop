@@ -122,7 +122,7 @@
 										</h2>
 										<div class="registrationText">New Customers: Sign Up Below</div>
 										<div>
-											<img class="img-responsive arrow-curved" src="<%=request.getContextPath()%>/resources/img/login/arrow_curved.png">
+											<img class="arrow-curved" src="<%=request.getContextPath()%>/resources/img/login/arrow_curved.png">
 										</div>
 									</div>
 									

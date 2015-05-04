@@ -8,8 +8,8 @@
 </head>
 <body>
 	<div id="search">
-		<div id="search-container" class="container">
-			<div class="container">
+		<div id="search-container" class="row">
+			<div>
 				<div class="facetss">
 					<div class="facet-container">
 						<form class="filter-sec facets search filters" action="#" method="post">
@@ -18,7 +18,7 @@
 							</p>
 							<div class="browsenodefacet">
 								<div class="row">
-									<h4 class="facet-title">Browse Categories
+									<h4 class="facet-title" onclick="facetToggle(this, 'bn')">Browse Categories
 										<span class="plus"></span>
 									</h4>
 									<ul class="bn_facet facet_panel" id="bn_facet_panel">
@@ -62,7 +62,7 @@
 								</div>
 							</div>
 							<div class="MS-or-facet">
-								<h4 class="facet-title">
+								<h4 class="facet-title" onclick="facetToggle(this, 'make')">
 									Brand
 									<span class="plus"></span>
 								</h4>
@@ -132,12 +132,7 @@
 											<input class="nav checkbox" type="checkbox">
 											<a href="#">A-DATA</a>
 										</div>
-										<div class="ps-scrollbar-x-rail" style="width: 269px; display: block; left: 0px; bottom: 3px;">
-											<div class="ps-scrollbar-x" style="left: 0px; width: 0px; display: block;"></div>
-										</div>
-										<div class="ps-scrollbar-y-rail" style="top: 0px; height: 240px; display: block; right: 3px;">
-											<div class="ps-scrollbar-y" style="top: 0px; height: 6px; display: block;"></div>
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -156,13 +151,13 @@
 							</ul>
 							<ul class="nav nav-tabs">
 								<span>Sort By</span>
-								<li class="active">
+								<li class="active" onclick="activeLi(this)">
 									<a href="#">Best Match</a>
 								</li>
-								<li>
+								<li onclick="activeLi(this)">
 									<a href="#">Low Price</a>
 								</li>
-								<li>
+								<li onclick="activeLi(this)">
 									<a href="#">High Price</a>
 								</li>
 							</ul>
@@ -409,4 +404,18 @@
 		<a href="" class="scrollup" style="display: block;"></a>
 	</div>
 </body>
+<script>	       
+$(document).ready(function(){
+$('.contentHolder').perfectScrollbar({suppressScrollX: true});
+	if ((width <= 480)) {
+		$(".facet_panel").hide();
+	}		
+	if (width <= 480) {
+		$(".facets").hide();
+	}
+	else{
+		$('.facetss').stick_in_parent();
+	}
+});
+</script>
 </html>

@@ -7,7 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><tiles:getAsString name="title" /></title>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/common/css/site.css" />
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/common/css/slick.css" />
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/slick.js" ></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/site.js" ></script>
 </head>
 <body>
